@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lights Out Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Lights Out</h1>
+    <button onclick="startNewGame()">New Game</button>
+    <div class="grid" id="board"></div>
+
+    <section id="addendum" style="max-width: 700px; margin: 40px auto; text-align: left;">
+        <h2>Addendum</h2>
+        <p>The "Lights Out" game was implemented using JavaScript with CSS for styling and HTML for structure. The board is a 5x5 grid of toggleable squares. Clicking a square toggles it and its immediate neighbors (up, down, left, right) between black (off) and white (on). When all lights are white, a pop-up message says “You win!”</p>
+        <p>To ensure solvability, the game starts with an all-white board and then simulates 20 random valid toggles. The New Game button resets the board and starts a new solvable game. Styling uses a CSS class <code>is-off</code> to represent black tiles. Edge-wrapping was avoided using column checks. A timestamp and footer were added per project instructions.</p>
+    </section>
+
+    <footer>
+        <p>Last updated:
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,28 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-top: 50px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    grid-gap: 5px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.cell {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.is-off {
+    background-color: black;
+}
+button {
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
